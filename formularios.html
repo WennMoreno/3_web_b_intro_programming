@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+    <link rel="icon" href="./src/lectern_1321105.png" />
+  </head>
+  <body>
+    <h1>Formularios en HTML</h1>
+
+    <form>
+
+      <div>
+        <p>Title</p>
+
+        <input type="radio" name="title" id="mr">
+        <label for="mr">Mr.</label>
+
+        <input type="radio" name="title" id="mrs">
+        <label for="mrs">Mrs.</label>
+
+        <input type="radio" name="title" id="miss">
+        <label for="miss">Miss.</label>
+
+      </div>
+
+      <div>
+        <label for="firstName">First name:</label>
+        <br />
+        <input type="text" id="firstName" placeholder="John..." />
+      </div>
+
+      <div>
+        <label for="lastName">Last name:</label>
+        <br />
+        <input type="text" id="lastName" placeholder="Doe..." />
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <br />
+        <input type="email" id="email" placeholder="johndoe@example.com" />
+      </div>
+
+      <div>
+        <label for="password">Password:</label>
+        <br />
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password..."
+        />
+      </div>
+
+      <div>
+        <label for="phone">Phone number:</label>
+        <br />
+        <input type="number" id="phone" placeholder="123-456-7890" />
+      </div>
+
+      <!-- Lista desplegable -->
+      <div>
+        <label for="country">Country:</label>
+        <br />
+        <select name="country" id="country">
+          <option value="usa">Perú</option>
+          <option value="canada">Canada</option>
+          <option value="mexico" selected>México</option>
+        </select>
+      </div>
+
+      <!-- Checkbox -->
+      <div>
+        <input type="checkbox" name="" id="terms" />
+        <label for="terms"> I agree to the terms and coditions</label>
+      </div>
+
+      <div> 
+        <label for="message">Message:</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message..."></textarea>
+      </div> 
+
+      <!-- Subir archivos -->
+
+      <div>
+        <label for="photo">Upload your profile picture:</label>
+        <br>
+        <input type="file" name="photo" id="photo">
+      </div>
+
+      <div>
+        <button type="submit">Sign Up</button>
+        <button>Resert form</button>
+      </div>
+    </form>
+  </body>
+</html>
